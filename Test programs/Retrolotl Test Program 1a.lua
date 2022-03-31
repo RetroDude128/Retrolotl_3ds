@@ -1,3 +1,4 @@
+x, y = 0
 function love.draw()
 	touched = 0
 	touches = love.touch.getTouches( )
