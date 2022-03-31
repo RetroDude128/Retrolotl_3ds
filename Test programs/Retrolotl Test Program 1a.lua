@@ -1,6 +1,6 @@
 function love.draw()
 	touches = love.touch.getTouches( )
-	if next(love.touch.getTouches()) ~= nil then
+	if next(touches) ~= nil then
 		x, y = love.touch.getPosition( touches[1] )
 	end
     love.graphics.print(x, 100, 80)
