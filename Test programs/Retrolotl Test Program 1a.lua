@@ -6,9 +6,9 @@ function love.draw()
 	if next(touches) ~= nil then
 		x, y = love.touch.getPosition( touches[1] )
 		touched = 1
+		love.graphics.print(x, 100, 80)
+		love.graphics.print(y, 100, 120)
 	end
-    love.graphics.print(x, 100, 80)
-	love.graphics.print(y, 100, 120)
 	love.graphics.print(touched, 100, 60)
 end
 
