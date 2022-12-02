@@ -17,7 +17,7 @@ function Control_JoyGet(axis)
         end
     end
     out = (math.ceil(out * 10)) / 10
-    if math.abs(out) < 0.3 then
+    if math.abs(out) < 0.2 then
         out = 0
     end
     return out;
