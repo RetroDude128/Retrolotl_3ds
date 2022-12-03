@@ -1,7 +1,7 @@
+local out = 0
+local joysticks = love.joystick.getJoysticks()
+local joystick = joysticks[1]
 function Control_JoyGet(axis)
-    local out = 0
-    local joysticks = love.joystick.getJoysticks()
-    local joystick = joysticks[1]
     out = joysticks[1]:getAxis(axis)
     if axis == 1 then
         if joystick:isGamepadDown("dpright") then
@@ -20,5 +20,9 @@ function Control_JoyGet(axis)
     if math.abs(out) < 0.2 then
         out = 0
     end
+    return out;
+end
+function Control_InGet(button)
+    out = joystick:isGamepadDown(button)
     return out;
 end
