@@ -1,4 +1,4 @@
--- Test Program 1
+-- Test Program 2
 require ("controller")
 X = 0
 Y = 0
